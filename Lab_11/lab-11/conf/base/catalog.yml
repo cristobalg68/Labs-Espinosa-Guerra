@@ -1,0 +1,51 @@
+Companies: 
+  type: pandas.ParquetDataSet
+  filepath: data/01_raw/Companies.parquet
+
+Shuttles: 
+  type: pandas.ParquetDataSet
+  filepath: data/01_raw/Shuttles.parquet
+
+Reviews: 
+  type: pandas.ParquetDataSet
+  filepath: data/01_raw/Reviews.parquet
+
+Preprocessed Companies: 
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/Preprocessed_Companies.parquet
+
+Preprocessed Shuttles: 
+  type: pandas.ParquetDataSet
+  filepath: data/02_intermediate/Preprocessed_Shuttles.parquet
+
+Model Input Table: 
+  type: pandas.ParquetDataSet
+  filepath: data/03_primary/Model_Input_Table.parquet
+
+X_Train:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/X_Train.parquet
+
+X_Valid:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/X_Valid.parquet
+
+X_Test:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/X_Test.parquet
+
+Y_Train:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/Y_Train.parquet
+
+Y_Valid:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/Y_Valid.parquet
+
+Y_Test:
+  type: pandas.ParquetDataSet
+  filepath: data/05_model_input/Y_Test.parquet
+
+Model:
+  type: pickle.PickleDataSet
+  filepath: data/06_models/Model.pickle
